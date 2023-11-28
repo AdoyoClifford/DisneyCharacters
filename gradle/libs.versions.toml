@@ -1,0 +1,54 @@
+[versions]
+agp = "8.1.4"
+coilCompose = "2.5.0"
+compose = "1.0.0-beta01"
+kotlin = "1.8.22"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.6.2"
+activityCompose = "1.8.1"
+composeBom = "2023.10.01"
+orbital = "0.3.2"
+landscapist = "2.2.12"
+kotlin-symbol-processing = "1.8.22-1.0.11"
+hilt-android = "2.44.2"
+hilt-android-compiler = "2.44"
+hilt-compiler = "1.0.0"
+hilt-version = "2.44"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+compose = { module = "com.github.bumptech.glide:compose", version.ref = "compose" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+orbital = { module = "com.github.skydoves:orbital", version.ref = "orbital" }
+
+landscapist-glide = { group = "com.github.skydoves", name = "landscapist-glide", version.ref = "landscapist" }
+landscapist-placeholder = { group = "com.github.skydoves", name = "landscapist-placeholder", version.ref = "landscapist" }
+landscapist-animation = { group = "com.github.skydoves", name = "landscapist-animation", version.ref = "landscapist" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt-android" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt-android-compiler" }
+hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-compiler" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-compiler" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+dagger-hilt-android = {id = "com.google.dagger.hilt.android", version.ref = "hilt-version"}
+devtools-ksp = {id = "com.google.devtools.ksp", version.ref = "kotlin-symbol-processing"}
+
